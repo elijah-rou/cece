@@ -1,7 +1,9 @@
 <script>
   import { fade } from "svelte/transition";
+  import Typewriter from 'svelte-typewriter'
 
   let page = 0;
+  let intervals = [50, 100, 150, 200];
 
   function next() {
     page += 1;
@@ -17,13 +19,13 @@
   {:else if page===1}
     <div class="grid grid-cols-2">
       <div class="text-5xl m-12 text-center">
-        <div in:fade={{ delay: 1000 }}>On May 4th</div>
-        <div in:fade={{ delay: 2500 }}>2023</div>
-        <div in:fade={{ delay: 4000 }}>I Met You...</div>
+        <Typewriter showCursorOnDelay={true} delay={1000} interval={intervals}>On May 4th</Typewriter>
+        <Typewriter delay={3000} interval={intervals} on:done>2023</Typewriter>
+        <Typewriter delay={5000} interval={intervals} on:done>I Met You...</Typewriter>
         <br/>
-        <div in:fade={{ delay: 6000 }}>(through goat sacrifice)</div>
+        <Typewriter delay={8000} interval={intervals} on:done>(through goat sacrifice)</Typewriter>
       </div>
-      <div in:fade={{ delay: 4500 }}>
+      <div in:fade={{ delay: 5500 }}>
         <img class="m-12" src="https://media.giphy.com/media/3o7TKzqB3g6r2nY5EI/giphy.gif" alt="" />
       </div>
     </div>
