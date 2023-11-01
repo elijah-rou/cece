@@ -10,3 +10,10 @@ export default {
   plugins: [],
 }
 
+module.exports = {
+  theme: {
+    fontFamily: {
+      'sans': ['Special Elite'],
+    }
+  }
+}
