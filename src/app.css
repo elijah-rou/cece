@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face{
+        font-family: 'BenjaminFranklin';
+        src: url('/src/assets/fonts/BenjaminFranklin.ttf');
+    }
+}
+

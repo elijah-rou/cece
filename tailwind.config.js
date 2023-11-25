@@ -2,18 +2,14 @@
 export default {
   content: [
     "./index.html",
+    "./src/App.svelte",
     "./src/**/*.{svelte,js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'typewriter': ['BenjaminFranklin', 'serif'],
+    },
     extend: {},
   },
   plugins: [],
-}
-
-module.exports = {
-  theme: {
-    fontFamily: {
-      'sans': ['Special Elite'],
-    }
-  }
 }

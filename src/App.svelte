@@ -11,7 +11,7 @@
   }
 </script>
 
-<main class="cursor-auto font-sans antialiased">
+<main class="cursor-auto font-typewriter antialiased">
   {#if page===0}
     <div class="flex items-center justify-center h-screen" out:fade>
       <button on:click={next} class="text-9xl animate-pulse">Dear Diary...</button>
@@ -26,7 +26,7 @@
         <Typewriter delay={8000} interval={intervals} on:done>(through goat sacrifice)</Typewriter>
       </div>
       <div in:fade={{ delay: 5500 }}>
-        <img class="m-12" src="https://media.giphy.com/media/3o7TKzqB3g6r2nY5EI/giphy.gif" alt="" />
+        <img class="m-12" src="src/assets/photos/sushi2.jpeg" alt="" />
       </div>
     </div>
   {:else if page===2}
